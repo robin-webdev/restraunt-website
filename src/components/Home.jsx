@@ -11,7 +11,7 @@ const Home = () => {
               return <i key={i} className="ri-star-fill"></i>;
             })}
           </span>
-          <span className="font-extrabold">4.1/5</span>
+          <span className="font-extrabold">4.5/5</span>
           <span className="text-[gray]">- on Google</span>
         </div>
 

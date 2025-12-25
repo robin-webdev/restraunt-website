@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import About from "./components/About";
 import Menu from "./components/Menu";
+import Gallary from "./components/gallary";
 
 const App = () => {
   return (
@@ -14,9 +15,10 @@ const App = () => {
         className="overflow-y-scroll h-full flex gap-30 flex-col pb-40 scrollbar"
         style={{ scrollbarWidth: "none" }}
       >
-        <Home />
+        {/* <Home />
         <About />
         <Menu />
+        <Gallary /> */}k
       </main>
     </div>
   );

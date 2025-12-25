@@ -1,6 +1,6 @@
 import React from "react";
 
-const About = () => {
+const About                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               = () => {
   return (
     <section className="text-white flex-col-reverse gap-20 px-7 flex items-center justify-center">
       <div className="flex flex-col gap-1">
@@ -69,4 +69,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default About                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ;
