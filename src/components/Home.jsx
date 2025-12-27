@@ -3,8 +3,8 @@ import heroimage from "../assets/images/hero-section.jpg";
 
 const Home = () => {
   return (
-    <section className="text-white flex flex-col-reverse">
-      <div className="flex flex-col gap-2 px-7">
+    <section className="text-white flex flex-col-reverse md:flex-row md:mt-20 xl:mt-15 2xl:mt-5 items-center">
+      <div className="flex flex-col gap-2 px-7 lg:pl-30 xl:pl-40">
         <div className="flex gap-2.5 text-sm">
           <span className="text-[#ffb700] flex gap-0.5">
             {Array.from(Array(5)).map((_, i) => {
@@ -31,7 +31,7 @@ const Home = () => {
       </div>
 
       <div className="flex items-center justify-center">
-        <img src={heroimage} alt="hero image" width={300} />
+        <img src={heroimage} alt="hero image" className="w-80 md:w-250 xl:w-300" />
       </div>
     </section>
   );

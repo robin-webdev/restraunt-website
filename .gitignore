@@ -7,6 +7,17 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# videos
+*.mp4
+*.mkv
+*.avi
+
+# large files
+*.zip
+*.rar
+*.7z
+
+
 node_modules
 dist
 dist-ssr
