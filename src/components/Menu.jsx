@@ -1,17 +1,25 @@
-import React from "react";
 import MenuCard from "./MenuCard";
-import butter from "../assets/images/menu/butter-chicken.png";
 import menuItems from "../data/items";
+import { color } from "motion";
 
 const Menu = () => {
   return (
     <section className="px-7 flex flex-col gap-12 items-center justify-center">
-      <h1 className="text-poppins text-3xl font-bold text-white text-center">
+      <h2 className="text-poppins text-3xl font-bold text-white text-center lg:text-4xl border-b-2 rounded-2xl px-4 py-2 border-[#d2e40f]">
         Popular Dishes
-      </h1>
+      </h2>
 
-      <div className="w-full h-full grid grid-cols-1 justify-items-center gap-y-5 ">
+      <div
+        className="w-full h-full grid gap-y-9 justify-items-center overflow-x-auto gap-x-9 grid-cols-[repeat(6,280px)] md:grid-cols-[repeat(2,280px)] md:justify-center lg:grid-cols-[repeat(3,280px)] xl:grid-cols-[repeat(3,300px)] py-4"
+        style={{
+          scrollbarWidth: "1px",
+          // gridTemplateColumns: "repeat(6, 280px)",
+        }}
+      >
         {menuItems.map((item, i) => {
+          if (i >= 6) {
+            return;
+          }
           return (
             <MenuCard
               key={i}
@@ -23,7 +31,9 @@ const Menu = () => {
           );
         })}
       </div>
-      <button className="bg-transparent border-2 px-6 py-3 font-bold rounded-2xl text-[#d2e40f]">See Full Menu</button>
+      <button className="bg-transparent border-2 px-6 py-3 font-bold rounded-2xl text-[#d2e40f]">
+        See Full Menu
+      </button>
     </section>
   );
 };

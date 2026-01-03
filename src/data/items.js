@@ -51,7 +51,7 @@ export const reviews = [
     img: "https://lh3.googleusercontent.com/a-/ALV-UjWWiIE4XcvGyPbLSaikCZXvaGOsF6O0yz7mQc2VIhv8JxdJbGIS2A=w90-h90-p-rp-mo-ba5-br100",
     name: "Zahoor Khan",
     review:
-      "Chaatwala – A burst of India in Riga.If you are craving authentic Indian street food in the heart of Riga, Chaatwala delivers a flavor-packed experience that hits all the right notes. 🌶️🇮🇳 From the moment we tried the Panipuri—crisp, tangy, and totally mouthwatering—it was clear we were in for a treat.",
+      "Chaatwala - A burst of India in Riga.If you are craving authentic Indian street food in the heart of Riga, Chaatwala delivers a flavor-packed experience that hits all the right notes. 🌶️🇮🇳 From the moment we tried the Panipuri—crisp, tangy, and totally mouthwatering—it was clear we were in for a treat.",
   },
   {
     img: "https://lh3.googleusercontent.com/a/ACg8ocJDzdzXK9ew4QBklFYBrRx9TLUUDC5_n2wqFjWmQ8qkkvkM2Vn9=w90-h90-p-rp-mo-ba6-br100",

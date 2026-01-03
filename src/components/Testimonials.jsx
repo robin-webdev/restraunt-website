@@ -4,8 +4,8 @@ import { reviews } from "../data/items";
 
 const Testimonials = () => {
   return (
-    <section className="flex flex-col gap-2 items-center ">
-      <h2 className="text-[#d2e40f] font-serif font-bold text-2xl ">
+    <section className="flex flex-col gap-2 items-center">
+      <h2 className="text-[#d2e40f] font-serif font-bold text-2xl">
         What our Customers Say
       </h2>
       <p className="text-[#b4b4b4] mb-6 text-sm">

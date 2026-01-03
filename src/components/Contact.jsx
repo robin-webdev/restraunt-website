@@ -56,7 +56,7 @@ const Contact = () => {
         <div>
           <button className="px-6 flex gap-3 items-center py-3 border-2 border-[#d2e40f] mt-6 rounded-3xl">
             <i className="ri-road-map-fill text-[#d2e40f] text-2xl"></i>
-            <span className="font-bold text-lg text-[#d2e40f]">
+          <span className="font-bold text-lg text-[#d2e40f]">
               View on Map
             </span>
           </button>

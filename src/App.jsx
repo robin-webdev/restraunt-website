@@ -17,7 +17,7 @@ const App = () => {
         className="overflow-y-auto h-full flex flex-col gap-2"
         style={{ scrollbarWidth: "none" }}
       >
-        <main className="flex gap-30 flex-col pb-7">
+        <main className="flex gap-20 flex-col">
           <Home />
           <About />
           <Menu />
