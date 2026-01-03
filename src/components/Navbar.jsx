@@ -15,7 +15,7 @@ const Navbar = () => {
         <div className="hidden sm:flex text-[white] lg:gap-[3vw] gap-3 md:gap-4  items-center font-normalz justify-center text-md tracking-wider ">
           <a
             href="#home"
-            className="text-[#bcca22] text-shadow-2xs text-shadow-[#d2e40f] underline underline-offset-8 underli"
+            className="text-[#bcca22] text-shadow-2xs text-shadow-[#d2e40f] underline underline-offset-8"
           >
             Home
           </a>
@@ -38,7 +38,7 @@ const Navbar = () => {
       </nav>
 
       <motion.div
-        className="bg-black absolute w-full h-full text-[#d2e40f] sm:hidden flex flex-col p-10 gap-10 font-poppins font-bold text-2xl z-50"
+        className="bg-black absolute w-full h-full text-white sm:hidden flex flex-col p-10 gap-10 font-poppins font-semibold text-2xl z-50"
         initial={{ x: "100%" }}
         animate={
           !isActive
@@ -46,7 +46,9 @@ const Navbar = () => {
             : { x: "0%", transition: { duration: 0.2, ease: easeOut } }
         }
       >
-        <a href="">Home</a>
+        <a href="" className="text-[#d2e40f] underline underline-offset-8">
+          Home
+        </a>
         <a href="">About</a>
         <a href="">Menu</a>
         <a href="">Gallary</a>
