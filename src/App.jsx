@@ -24,7 +24,7 @@ const App = () => {
           <Gallary />
           <Testimonials />
         </main>
-        <footer className="h-screen w-screen pb-50">
+        <footer className="w-screen pb-30">
           <hr className="text-white w-full opacity-15 " />
           <Contact />
           <div className="text-[#9f9f9f] flex items-center font-light pt-8 text-sm justify-around">
