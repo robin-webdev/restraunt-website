@@ -2,7 +2,7 @@ import React from "react";
 
 const ReviewItem = ({ img, name, review }) => {
   return (
-    <div className="min-w-3/4 h-full items-start rounded-2xl p-4 flex-col bg-[#060D01] border border-[#2f322d]">
+    <div className="min-w-60 h-full items-start rounded-2xl p-4 flex-col bg-[#060D01] border border-[#2f322d]">
       <div className="flex gap-3 mb-5">
         <img className=" self-center w-10" src={img} alt="menu card img" />
         <div>
