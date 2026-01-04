@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <section
       id="home"
-      className="text-white relative bg-[url(./assets/images/hero-section.jpg)] h-[95vh] bg-cover flex flex-col-reverse md:flex-row items-center"
+      className="text-white scroll-mt-18 relative bg-[url(./assets/images/hero-section.jpg)] h-[95vh] bg-cover flex flex-col-reverse md:flex-row items-center"
     >
       <div className="absolute top-0 left-0 h-full w-full bg-[rgba(0,0,0,0.7)] ">
         <div className="h-full flex flex-col gap-2 px-7 sm:px-15 md:px-20 lg:px-30 xl:px-45 2xl:px-65 pt-[15vh]">
@@ -34,9 +34,13 @@ const Home = () => {
             setting.
           </p>
           <div>
-            <button className="mt-4 border-2 bg-transparent border-[#d2e40f] py-1 text-[#d2e40f]  rounded-lg inline-block px-6 ">
-              Explore
-            </button>
+            <a
+              href="https://food.bolt.eu/en/3-riga/p/135586-chaatwala/"
+              target="_blank"
+              className="mt-4 border-2 bg-transparent border-[#d2e40f] py-1 text-[#d2e40f]  rounded-lg inline-block px-6 "
+            >
+              Order
+            </a>
           </div>
         </div>
       </div>

@@ -4,7 +4,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="text-white px-7 pt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 sm:justify-items-center"
+      className="text-white px-7 pt-8 grid scroll-mt-18 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 sm:justify-items-center"
     >
       <div className="flex flex-col gap-1 justify-center sm:w-[80%]">
         <h2 className="text-3xl text-white font-poppins font-bold lg:text-4xl">
@@ -58,13 +58,13 @@ const Contact = () => {
           Mon - Sun
           <span className="text-white font-extrabold">11am - 11:30pm</span>
         </span>
-        <div>
-          <button className="px-6 flex gap-3 items-center py-3 border-2 border-[#d2e40f] mt-6 rounded-3xl">
+        <div >
+          <a href="https://maps.app.goo.gl/zmSMREMfidy4Zz7T8" target="_blank" className="px-6 flex gap-3 items-center py-3 border-2 border-[#d2e40f] mt-6 rounded-3xl">
             <i className="ri-road-map-fill text-[#d2e40f] text-2xl"></i>
             <span className="font-bold text-lg text-[#d2e40f]">
               View on Map
             </span>
-          </button>
+          </a>
         </div>
       </div>
     </section>

@@ -2,7 +2,7 @@ import React from "react";
 
 const Gallery = () => {
   return (
-    <section id="gallery" className="flex flex-col gap-10 font-poppins">
+    <section id="gallery" className="flex flex-col gap-10 font-poppins scroll-mt-18">
       <h1 className="  stroke-[#d2e40f] flex flex-col items-center text-white text-poppins gap-1 text-3xl font-bold text-center lg:text-4xl">
         Our Gallery
         <div className="h-1 w-30 rounded-2xl bg-[#d2e40f]" />

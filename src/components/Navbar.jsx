@@ -5,12 +5,23 @@ import { easeIn, easeOut, motion } from "motion/react";
 
 const Navbar = () => {
   const [isActive, setIsActive] = useState(false);
+  const [isOn, setIsOn] = useState("home");
 
   const scrollIntoView = (ref) => {
     if (ref) {
-      ref.scrollIntoView({
-        behavior: "smooth",
-      });
+      setIsOn(ref.getAttribute("id"));
+      setIsActive(false);
+      if (isActive) {
+        setTimeout(() => {
+          ref.scrollIntoView({
+            behavior: "smooth",
+          });
+        }, 300);
+      } else {
+        ref.scrollIntoView({
+          behavior: "smooth",
+        });
+      }
     }
   };
 
@@ -24,23 +35,46 @@ const Navbar = () => {
 
           <div className="hidden sm:flex text-[white] lg:gap-[3vw] gap-3 md:gap-4  items-center font-normalz justify-center text-md tracking-wider ">
             <a
+              className={`cursor-pointer scroll-mt-26 ${
+                isOn === "home" &&
+                "underline underline-offset-8 text-[#bcca22] font-bold "
+              }`}
               onClick={() => scrollIntoView(document.querySelector("#home"))}
-              className="text-[#bcca22] text-shadow-2xs text-shadow-[#d2e40f] underline underline-offset-8"
             >
               Home
             </a>
-            <a onClick={() => scrollIntoView(document.querySelector("#about"))}>
+            <a
+              className={`cursor-pointer scroll-mt-26 ${
+                isOn === "about" &&
+                "underline underline-offset-8 text-[#bcca22]  ont-bold"
+              }`}
+              onClick={() => scrollIntoView(document.querySelector("#about"))}
+            >
               About
             </a>
-            <a onClick={() => scrollIntoView(document.querySelector("#menu"))}>
+            <a
+              className={`cursor-pointer scroll-mt-26 ${
+                isOn === "menu" &&
+                "underline underline-offset-8 text-[#bcca22] font-bold"
+              }`}
+              onClick={() => scrollIntoView(document.querySelector("#menu"))}
+            >
               Menu
             </a>
             <a
+              className={`cursor-pointer scroll-mt-26 ${
+                isOn === "gallery" &&
+                "underline underline-offset-8 text-[#bcca22]  font-bold"
+              }`}
               onClick={() => scrollIntoView(document.querySelector("#gallery"))}
             >
               Gallery
             </a>
             <a
+              className={`cursor-pointer scroll-mt-26 ${
+                isOn === "testimonials" &&
+                "underline underline-offset-8 text-[#bcca22]  font-bold"
+              }`}
               onClick={() =>
                 scrollIntoView(document.querySelector("#testimonials"))
               }
@@ -48,6 +82,10 @@ const Navbar = () => {
               Testimonials
             </a>
             <a
+              className={`cursor-pointer scroll-mt-26 ${
+                isOn === "contact" &&
+                "underline underline-offset-8 text-[#bcca22]  font-bold"
+              }`}
               onClick={() => scrollIntoView(document.querySelector("#contact"))}
             >
               Contact Us
@@ -75,14 +113,62 @@ const Navbar = () => {
             : { x: "0%", transition: { duration: 0.2, ease: easeOut } }
         }
       >
-        <a href="" className="text-[#d2e40f] underline underline-offset-8">
+        <a
+          className={`cursor-pointer scroll-mt-26 ${
+            isOn === "home" &&
+            "underline underline-offset-8 text-[#bcca22] font-bold "
+          }`}
+          onClick={() => scrollIntoView(document.querySelector("#home"))}
+        >
           Home
         </a>
-        <a href="">About</a>
-        <a href="">Menu</a>
-        <a href="">Gallary</a>
-        <a href="">Testimonials</a>
-        <a href="">Contact Us</a>
+        <a
+          className={`cursor-pointer scroll-mt-26 ${
+            isOn === "about" &&
+            "underline underline-offset-8 text-[#bcca22]  ont-bold"
+          }`}
+          onClick={() => scrollIntoView(document.querySelector("#about"))}
+        >
+          About
+        </a>
+        <a
+          className={`cursor-pointer scroll-mt-26 ${
+            isOn === "menu" &&
+            "underline underline-offset-8 text-[#bcca22] font-bold"
+          }`}
+          onClick={() => scrollIntoView(document.querySelector("#menu"))}
+        >
+          Menu
+        </a>
+        <a
+          className={`cursor-pointer scroll-mt-26 ${
+            isOn === "gallery" &&
+            "underline underline-offset-8 text-[#bcca22]  font-bold"
+          }`}
+          onClick={() => scrollIntoView(document.querySelector("#gallery"))}
+        >
+          Gallery
+        </a>
+        <a
+          className={`cursor-pointer scroll-mt-26 ${
+            isOn === "testimonials" &&
+            "underline underline-offset-8 text-[#bcca22]  font-bold"
+          }`}
+          onClick={() =>
+            scrollIntoView(document.querySelector("#testimonials"))
+          }
+        >
+          Testimonials
+        </a>
+        <a
+          className={`cursor-pointer scroll-mt-26 ${
+            isOn === "contact" &&
+            "underline underline-offset-8 text-[#bcca22]  font-bold"
+          }`}
+          onClick={() => scrollIntoView(document.querySelector("#contact"))}
+        >
+          Contact Us
+        </a>
       </motion.div>
     </div>
   );

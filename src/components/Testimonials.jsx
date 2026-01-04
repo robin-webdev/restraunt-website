@@ -6,7 +6,7 @@ const Testimonials = () => {
   return (
     <section
       id="testimonials"
-      className="flex flex-col gap-2 items-center my-20"
+      className="flex flex-col scroll-mt-18 gap-2 items-center my-20"
     >
       <h2 className="text-[#d2e40f] font-serif font-bold text-2xl lg:text-3xl xl:text-4xl">
         What our Customers Say
