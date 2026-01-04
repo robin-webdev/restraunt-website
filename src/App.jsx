@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import About from "./components/About";
 import Menu from "./components/Menu";
-import Gallary from "./components/Gallary";
+import Gallery from "./components/Gallery";
 import Testimonials from "./components/Testimonials";
 import Contact from "./components/Contact";
 
@@ -14,14 +14,14 @@ const App = () => {
         <Navbar />
       </header>
       <div
-        className="overflow-y-auto h-full flex flex-col gap-2"
+        className="overflow-y-auto h-full flex flex-col gap-2 pt-15 md:pt-18"
         style={{ scrollbarWidth: "none" }}
       >
         <main className="flex gap-20 flex-col">
           <Home />
           <About />
           <Menu />
-          <Gallary />
+          <Gallery />
           <Testimonials />
         </main>
         <footer className="w-screen pb-30">

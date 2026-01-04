@@ -3,7 +3,10 @@ import heroimage from "../assets/images/hero-section.jpg";
 
 const Home = () => {
   return (
-    <section className="text-white relative bg-[url(./assets/images/hero-section.jpg)] h-[95vh] bg-cover flex flex-col-reverse md:flex-row items-center">
+    <section
+      id="home"
+      className="text-white relative bg-[url(./assets/images/hero-section.jpg)] h-[95vh] bg-cover flex flex-col-reverse md:flex-row items-center"
+    >
       <div className="absolute top-0 left-0 h-full w-full bg-[rgba(0,0,0,0.7)] ">
         <div className="h-full flex flex-col gap-2 px-7 sm:px-15 md:px-20 lg:px-30 xl:px-45 2xl:px-65 pt-[15vh]">
           <div className="flex items-center gap-2.5 text-">
@@ -17,7 +20,7 @@ const Home = () => {
           </div>
 
           <h1 className=" font-poppins font-semibold text-4xl lg:text-5xl xl:text-6xl  ">
-            Chatwala - Authentic Indian Flavors in Riga 
+            Chatwala - Authentic Indian Flavors in Riga
           </h1>
           <p className="xl:text-lg text-[#c4c4c4]">
             Experience the taste of India right in the heart of Riga. From spicy

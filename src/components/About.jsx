@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <section className="text-white flex-col-reverse lg:flex-row gap-20 lg:gap-10  px-7 md:px-12 lg:px-7 xl:px-12 flex items-center justify-center xl:items-start">
+    <section id="about" className="text-white flex-col-reverse lg:flex-row gap-20 lg:gap-10  px-7 md:px-12 lg:px-7 xl:px-12 flex items-center justify-center xl:items-start">
       <div className="flex flex-col lg:w-full gap-1">
         <div className="flex items-center gap-2">
           <div className="w-10 h-1 bg-[#d2e40f] " />

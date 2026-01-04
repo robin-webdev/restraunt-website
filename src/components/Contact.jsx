@@ -2,7 +2,10 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <section className="text-white px-7 pt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 sm:justify-items-center">
+    <section
+      id="contact"
+      className="text-white px-7 pt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 sm:justify-items-center"
+    >
       <div className="flex flex-col gap-1 justify-center sm:w-[80%]">
         <h2 className="text-3xl text-white font-poppins font-bold lg:text-4xl">
           Chaatwala

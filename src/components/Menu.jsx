@@ -4,7 +4,10 @@ import { color } from "motion";
 
 const Menu = () => {
   return (
-    <section className="px-7 flex flex-col gap-12 items-center justify-center">
+    <section
+      id="menu"
+      className="px-7 flex flex-col gap-12 items-center justify-center"
+    >
       <h2 className="text-poppins text-3xl font-bold text-white text-center lg:text-4xl border-b-2 rounded-2xl px-4 py-2 border-[#d2e40f]">
         Popular Dishes
       </h2>
@@ -13,7 +16,6 @@ const Menu = () => {
         className="w-full h-full grid gap-y-9 justify-items-center overflow-x-auto gap-x-9 grid-cols-[repeat(6,280px)] md:grid-cols-[repeat(2,280px)] md:justify-center lg:grid-cols-[repeat(3,280px)] xl:grid-cols-[repeat(3,300px)] py-4"
         style={{
           scrollbarWidth: "1px",
-          // gridTemplateColumns: "repeat(6, 280px)",
         }}
       >
         {menuItems.map((item, i) => {

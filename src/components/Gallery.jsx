@@ -1,10 +1,10 @@
 import React from "react";
 
-const Gallary = () => {
+const Gallery = () => {
   return (
-    <section className="flex flex-col gap-10 font-poppins">
+    <section id="gallery" className="flex flex-col gap-10 font-poppins">
       <h1 className="  stroke-[#d2e40f] flex flex-col items-center text-white text-poppins gap-1 text-3xl font-bold text-center lg:text-4xl">
-        Our Gallary
+        Our Gallery
         <div className="h-1 w-30 rounded-2xl bg-[#d2e40f]" />
       </h1>
 
@@ -44,4 +44,4 @@ const Gallary = () => {
   );
 };
 
-export default Gallary;
+export default Gallery;
