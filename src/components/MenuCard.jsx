@@ -6,6 +6,7 @@ const MenuCard = ({ img, title, description, price }) => {
       <img
         className="w-3/4 self-center min-h-45"
         src={img}
+        loading="lazy"
         alt="menu card img"
       />
       <h3 className="font-poppins font-bold opacity-90  text-white px-4 text-lg">

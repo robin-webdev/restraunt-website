@@ -30,7 +30,9 @@ const Navbar = () => {
       <div className="fixed w-full z-50">
         <nav className="z-50  bg-[#010300] flex items-center justify-between w-full py-2 md:px-5 lg:px-20 px-4">
           <div>
-            <img src={logo2} alt="logo img" className="w-20 md:w-24" />
+            <a href="/">
+              <img src={logo2} alt="logo img" className="w-20 md:w-24" />
+            </a>
           </div>
 
           <div className="hidden sm:flex text-[white] lg:gap-[3vw] gap-3 md:gap-4  items-center font-normalz justify-center text-md tracking-wider ">

@@ -1,10 +1,10 @@
 import { menuitem } from "motion/react-client";
-import paniPuri from "../assets/images/menu/pani-puri.png";
-import samosaChaat from "../assets/images/menu/samosa-chaat.png";
-import butterChicken from "../assets/images/menu/butter-chicken.png";
-import chickenTikka from "../assets/images/menu/chickken-tika-wrap.png";
-import masalaDosa from "../assets/images/menu/masala dosa.png";
-import choleBhature from "../assets/images/menu/chole-bhature.png";
+import paniPuri from "../assets/images/menu/pani-puri.webp";
+import samosaChaat from "../assets/images/menu/samosa-chaat.webp";
+import butterChicken from "../assets/images/menu/butter-chicken.webp";
+import chickenTikka from "../assets/images/menu/chickken-tika-wrap.webp";
+import masalaDosa from "../assets/images/menu/masala-dosa.webp";
+import choleBhature from "../assets/images/menu/chole-bhature.webp";
 
 const menuItems = [
   {

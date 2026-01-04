@@ -20,7 +20,7 @@ const Menu = () => {
       >
         {menuItems.map((item, i) => {
           if (i >= 6) {
-            return;
+            return null;
           }
           return (
             <MenuCard
